@@ -1,0 +1,19 @@
+﻿<Window x:Class="UserInl.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UserInl"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="126,10,0,0"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="126,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="126,75,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="_Email" HorizontalAlignment="Left" Margin="0,67,0,0" VerticalAlignment="Top" Target="{Binding ElementName=txtEmail}" Name="label3" Height="34" Width="110"/>
+        <Label Content="_Last Name" HorizontalAlignment="Left" Margin="0,35,0,0" VerticalAlignment="Top" Target="{Binding ElementName=txtLastName}" Name="label2" Height="32" Width="110"/>
+        <Label Content="_First Name" HorizontalAlignment="Left" Margin="0,3,0,0" VerticalAlignment="Top" Target="{Binding ElementName=txtFirstName}" Name="label1" Height="32" Width="110"/>
+        <Button Content="_Submit" HorizontalAlignment="Left" Margin="0,106,0,0" VerticalAlignment="Top" Height="23" Width="66" Click="Button_Click"/>
+
+    </Grid>
+</Window>
